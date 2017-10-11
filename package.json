@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yufeikang/react-native-keyevent.git"
+    "url": "git+https://github.com/Yufeikang/react-native-key-event.git"
   },
   "peerDependencies": {
     "react-native": "^0.41.2"
