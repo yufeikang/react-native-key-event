@@ -1,0 +1,22 @@
+
+{
+  "name": "react-native-key-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Kang <kyf0722@gmail.com> (github.com/Yufeikang)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yufeikang/react-native-keyevent.git"
+  },
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
