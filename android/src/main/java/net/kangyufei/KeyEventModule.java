@@ -39,14 +39,14 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
         mJSModule = mReactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
     }
     WritableMap args = Arguments.createMap();
-    args.pushInt("keyCode", keyCode);
-    args.pushInt("scanCode", event.getScanCode());
-    args.pushInt("unicodeChar", event.getUnicodeChar());
-    args.pushString("Number", String.valueOf(event.getNumber()));
-    args.pushBool("isShiftPressed", event.isShiftPressed());
-    args.pushBool("isLongPress", event.isLongPress());
-    args.pushBool("isCapsLockOn", event.isCapsLockOn());
-    args.pushString("displayLabel", String.valueOf(event.getDisplayLabel()));
+    args.putInt("keyCode", keyCode);
+    args.putInt("scanCode", event.getScanCode());
+    args.putInt("unicodeChar", event.getUnicodeChar());
+    args.putString("Number", String.valueOf(event.getNumber()));
+    args.putBool("isShiftPressed", event.isShiftPressed());
+    args.putBool("isLongPress", event.isLongPress());
+    args.putBool("isCapsLockOn", event.isCapsLockOn());
+    args.putString("displayLabel", String.valueOf(event.getDisplayLabel()));
     mJSModule.emit("onKeyDown", args);
   };
 
@@ -55,14 +55,14 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
           mJSModule = mReactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
       }
       WritableMap args = Arguments.createMap();
-      args.pushInt("keyCode", keyCode);
-      args.pushInt("scanCode", event.getScanCode());
-      args.pushInt("unicodeChar", event.getUnicodeChar());
-      args.pushString("Number", String.valueOf(event.getNumber()));
-      args.pushBool("isShiftPressed", event.isShiftPressed());
-      args.pushBool("isLongPress", event.isLongPress());
-      args.pushBool("isCapsLockOn", event.isCapsLockOn());
-      args.pushString("displayLabel", String.valueOf(event.getDisplayLabel()));
+      args.putInt("keyCode", keyCode);
+      args.putInt("scanCode", event.getScanCode());
+      args.putInt("unicodeChar", event.getUnicodeChar());
+      args.putString("Number", String.valueOf(event.getNumber()));
+      args.putBool("isShiftPressed", event.isShiftPressed());
+      args.putBool("isLongPress", event.isLongPress());
+      args.putBool("isCapsLockOn", event.isCapsLockOn());
+      args.putString("displayLabel", String.valueOf(event.getDisplayLabel()));
       mJSModule.emit("onKeyUp", args);
   };
 
