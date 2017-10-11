@@ -14,8 +14,6 @@ import android.view.KeyEvent;
 
 public class KeyEventModule extends ReactContextBaseJavaModule {
 
-  private final ReactApplicationContext reactContext;
-
   private static KeyEventModule instance = null;
   private ReactContext mReactContext;
   private DeviceEventManagerModule.RCTDeviceEventEmitter mJSModule = null;
@@ -31,7 +29,7 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
 
   public KeyEventModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.reactContext = reactContext;
+    mReactContext = reactContext;
   }
 
   public void onKeyDownEvent(int keyCode, KeyEvent event) {
