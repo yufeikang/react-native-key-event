@@ -43,9 +43,9 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
     args.putInt("scanCode", event.getScanCode());
     args.putInt("unicodeChar", event.getUnicodeChar());
     args.putString("Number", String.valueOf(event.getNumber()));
-    args.putBool("isShiftPressed", event.isShiftPressed());
-    args.putBool("isLongPress", event.isLongPress());
-    args.putBool("isCapsLockOn", event.isCapsLockOn());
+    args.putBoolean("isShiftPressed", event.isShiftPressed());
+    args.putBoolean("isLongPress", event.isLongPress());
+    args.putBoolean("isCapsLockOn", event.isCapsLockOn());
     args.putString("displayLabel", String.valueOf(event.getDisplayLabel()));
     mJSModule.emit("onKeyDown", args);
   };
@@ -59,9 +59,9 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
       args.putInt("scanCode", event.getScanCode());
       args.putInt("unicodeChar", event.getUnicodeChar());
       args.putString("Number", String.valueOf(event.getNumber()));
-      args.putBool("isShiftPressed", event.isShiftPressed());
-      args.putBool("isLongPress", event.isLongPress());
-      args.putBool("isCapsLockOn", event.isCapsLockOn());
+      args.putBoolean("isShiftPressed", event.isShiftPressed());
+      args.putBoolean("isLongPress", event.isLongPress());
+      args.putBoolean("isCapsLockOn", event.isCapsLockOn());
       args.putString("displayLabel", String.valueOf(event.getDisplayLabel()));
       mJSModule.emit("onKeyUp", args);
   };
